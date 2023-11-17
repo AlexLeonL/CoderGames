@@ -1,0 +1,11 @@
+.f-container {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background-color: rgba(22, 22, 22, 0.7803921569);
+}
+
+.f-container p {
+    font-size: .8rem;
+    font-weight: 300;
+}

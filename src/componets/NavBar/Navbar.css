@@ -1,0 +1,63 @@
+/* Navbar.css */
+
+:root {
+  --bg-color: #202020;
+  --text-color: #fff;
+  --main-color: #EF2FB1;
+  --dropdown: #171717;
+  --links: #d4d3d3;
+  --bg-1: #202020;
+}
+.container {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.active { 
+  font-weight: bold;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  transition: all 0.5s ease;
+  background-color: rgba(22, 22, 22, 0.7803921569);
+}
+
+.nav {
+    display: block;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: .9rem;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px 0;
+  margin: 0 30px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  color: var(--text-color);
+  transition: all 0.9s ease;
+  background-color: rgba(82, 80, 80, 0.78);
+  border-radius: 15px;
+  padding: 10px;
+}

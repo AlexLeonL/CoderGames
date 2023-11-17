@@ -1,0 +1,15 @@
+.CartWidget {
+    display: flex;
+    align-items: center;
+  }
+  
+  .CartIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .CartItemCount {
+    font-weight: bold;
+    color: #fff;
+  }
