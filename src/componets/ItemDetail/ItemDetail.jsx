@@ -69,8 +69,8 @@ const ItemDetail = ({
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
-      }}
-    >
+      }}>
+        
       <article>
         {/* <button onClick={() => setInputType(inputType === 'input' ? 'button' : 'input')}>
                 Cambiar contador
