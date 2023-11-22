@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (    
         <nav className='header'>
-            <img src='https://lh3.googleusercontent.com/pw/ADCreHde4SWrrh7KkM4vmcfoXOaGB2DmdW0BJ8BWLUo9baF0Zn00djdkUDpPfWUG3xHwqXf-p0qr-Aql4oslhFB1qcsuaU93pwEQ5M9bIaUs3xQnA4F-0KA-aRw-QMXd_Bxp91aL7LuXcJ60dJG6XeJmklyu' onClick={() => navigate('/')} alt=''/> 
+            <img src='https://alexleon.pw/img/logo.png' onClick={() => navigate('/')} alt=''/> 
              <section className='navbar'> 
                 <NavLink to='/category/juegosps5' className={({ isActive }) => isActive ? classes.active : ''}>
                  Juegos PS5
