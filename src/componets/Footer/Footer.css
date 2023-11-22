@@ -1,4 +1,7 @@
 .f-container {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 1%;
@@ -6,6 +9,6 @@
 }
 
 .f-container p {
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 300;
 }

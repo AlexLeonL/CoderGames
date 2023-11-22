@@ -1,6 +1,16 @@
 /*==================================================
  Page Home Container
  ==================================================*/
+ * {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+
 
 .listado {
     width: 100%;
@@ -8,6 +18,7 @@
     display: grid;
     padding-top: 2%;
     padding-bottom: 1%;
+
 }
 
 

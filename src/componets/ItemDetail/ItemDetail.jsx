@@ -3,6 +3,21 @@ import { useCart } from "../../context/CartContext";
 import { useNotification } from "../../notification/NotificationContext";
 import { Link } from "react-router-dom";
 
+const ButtonBuy = () =>{
+  return(
+   <div className="cart-content-buy ">
+    <div className="cart-content-buy-s1">
+      <p>☰ Resumen de Compra</p>
+    </div>
+    <button className="buttonz">
+ <Link to="/cart">✔ Finalizar Compra</Link>
+    </button>
+    <button className="buttonz">
+      <Link to="/">← Seguir Comprando</Link>
+    </button>
+   </div> 
+  )
+}
 
 const InputCount = ({ onAdd, stock, initial = 1 }) => {
   const [count, setCount] = useState(initial);
@@ -38,6 +53,7 @@ const ItemDetail = ({
       name,
       price,
       quantity,
+      img,
     };
 
     addItem(productToAdd);
@@ -128,12 +144,14 @@ const ItemDetail = ({
                 </div>
               </div>
 
+             
               {isInCart(id) ? (
-                <Link to="/cart">Finalizar Compra</Link>
+                <ButtonBuy/>
+
               ) : (
                 <ItemCount stock={stock} onAdd={handleOnAdd} />
               )}
-
+              
               {imagenSeleccionada && (
                 <div className="modal-imagen">
                   <img

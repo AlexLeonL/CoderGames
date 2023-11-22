@@ -16,11 +16,6 @@
   --bg-1: #202020;
 }
 
-body {
-  min-height: 100vh;
-  background: var(--bg-color);
-  color: var(--text-color);
-}
 
 .container {
   background-color: var(--bg-color);
