@@ -9,18 +9,27 @@ const Navbar = () => {
         <nav className='header'>
             <img src='https://alexleon.pw/img/logo.png' onClick={() => navigate('/')} alt=''/> 
              <section className='navbar'> 
+             <ul className='nav navbar-nav'>
+                <li>
                 <NavLink to='/category/juegosps5' className={({ isActive }) => isActive ? classes.active : ''}>
                  Juegos PS5
-                </NavLink>
-                <NavLink to='/category/juegosps4' className={({ isActive }) => isActive ? classes.active : ''}>
+                </NavLink></li>
+                <li><NavLink to='/category/juegosps4' className={({ isActive }) => isActive ? classes.active : ''}>
                 Juegos PS4
-                </NavLink>
-                <NavLink to='/category/juegosps3' className={({ isActive }) => isActive ? classes.active : ''}>
+                </NavLink></li>
+                <li><NavLink to='/category/juegosps3' className={({ isActive }) => isActive ? classes.active : ''}>
                 Juegos PS3
-                </NavLink>
-                <NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>
+                </NavLink></li>
+                <li><NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>
+                Xbox
+                </NavLink></li>
+                <li><NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>
+                Nintento
+                </NavLink></li>
+                <li><NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>
                 Contacto
-                </NavLink>
+                </NavLink></li>
+                </ul>
             </section>
             <CartWidget />
         </nav>

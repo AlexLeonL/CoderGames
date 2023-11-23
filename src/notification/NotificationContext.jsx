@@ -2,19 +2,25 @@ import { useState, createContext, useContext } from "react";
 
 const Notification = ({ notificationData }) => {
     const notificationStyle = {
-      position: 'absolute',
+      position: 'fixed',
       top: 100,
-      right: 50,
+      right: 95,
       backgroundColor: notificationData.type === 'success' ? 'green' : 'red',
       color: 'white',
-      padding: '10px 20px 10px 20px',
-      borderRadius: 10
+      padding: '20px 30px 20px 30px',
+      borderRadius: 10,
+      zIndex: 9999,
+      display: 'flex', // Para permitir la alineación vertical de la imagen y el texto
+      alignItems: 'center', // Alineación vertical
     }
   
     return (
       <article style={notificationStyle}>
-        <h4>Notificacion</h4>
+         {notificationData.image && <img src={notificationData.image} alt="Product" style={{ marginRight: '10px',width:'60px' }} />}
+       <div>
+        <h4>¡Ya agregamos tu producto al carrito!</h4>
         <p>{notificationData.text}</p>
+      </div>
       </article>
     )
   }
@@ -27,15 +33,16 @@ export const NotificationProvider = ({ children }) => {
         type: 'success'
     })
 
-    const setNotification = (type, text) => {
+    const setNotification = (type, text,image = '') => {
         setNotificationData({
-            text, type
+            text, type, image
         })
 
         setTimeout(() => {
             setNotificationData({
                 text: '',
-                type: 'success'
+                type: 'success',
+                image: '',
             })
         }, 3000)
     }

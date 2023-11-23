@@ -1,9 +1,19 @@
 /* Navbar.css */
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+
 :root {
   --bg-color: #202020;
   --text-color: #fff;
-  --main-color: #EF2FB1;
+  --main-color: #fff;
   --dropdown: #171717;
   --links: #d4d3d3;
   --bg-1: #202020;
@@ -17,6 +27,9 @@
   padding: 10px;
 }
 
+a {
+  color: #fff;
+}
 
 .active { 
   font-weight: bold;
@@ -31,9 +44,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 5%;
+  padding: 0.1% 5.4%;
   transition: all 0.5s ease;
-  background-color: rgba(22, 22, 22, 0.7803921569);
+  background-color: rgba(19, 19, 19, 0.9);
 }
 
 .nav {
@@ -42,22 +55,50 @@
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .navbar a {
   color: var(--text-color);
-  font-size: .9rem;
+  font-size: 1rem;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   padding: 5px 0;
-  margin: 0 30px;
-  transition: all 0.5s ease;
 }
 
-.navbar a:hover {
-  color: var(--text-color);
-  transition: all 0.9s ease;
-  background-color: rgba(82, 80, 80, 0.78);
-  border-radius: 15px;
-  padding: 10px;
+.navbar a :hover{
+  color:#ff0000;
+  font-weight: 400;
 }
+
+
+/*==================================================
+  Main Menu
+  ==================================================*/
+/* Main navigation */
+
+ul.navbar-nav > li {
+  display: inline-block;
+  position: relative;
+}
+
+ul.navbar-nav > li > a {
+  /* padding: 0 15px; */
+  font-size: .8rem;
+  font-weight: 400;
+  text-transform: uppercase; 
+  margin: -20%;
+  position: relative;
+  -webkit-transition: 350ms;
+  -o-transition: 350ms;
+  transition: 350ms;
+  padding: 2% 24px;
+}
+
+ul.navbar-nav > li > a:hover{
+  background-color:none;
+  color: #ff0000;
+  border-radius: 5px;
+}
+
+

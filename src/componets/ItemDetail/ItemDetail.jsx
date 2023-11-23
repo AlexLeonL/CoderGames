@@ -57,7 +57,7 @@ const ItemDetail = ({
     };
 
     addItem(productToAdd);
-    setNotification("error", `Se agregaron ${quantity} ${name}`);
+    setNotification("error", `Se agrego ${quantity} producto del juego ${name}`,img);
   };
 
   return (
@@ -69,6 +69,7 @@ const ItemDetail = ({
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
+        boxShadow: "5px 5px 10px black",
       }}>
         
       <article>
