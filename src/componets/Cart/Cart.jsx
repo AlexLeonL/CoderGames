@@ -4,12 +4,10 @@ import { useCart } from "../../context/CartContext"
 const Cart = () => {
     const { cart } = useCart()
 
-     // Función para calcular el total por producto
   const getTotalPerProduct = (product) => {
     return product.price * product.quantity;
   };
 
-  // Función para calcular el total general del carrito
   const getTotalGeneral = () => {
     let totalGeneral = 0;
 

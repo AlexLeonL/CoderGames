@@ -9,15 +9,6 @@
   list-style: none;
 }
 
-
-:root {
-  --bg-color: #202020;
-  --text-color: #fff;
-  --main-color: #fff;
-  --dropdown: #171717;
-  --links: #d4d3d3;
-  --bg-1: #202020;
-}
 .container {
   background-color: #333;
   color: #fff;

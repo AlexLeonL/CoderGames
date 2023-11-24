@@ -1,79 +1,71 @@
-/* Estilos para el contenedor del artículo */
+/* Estilos para el cart */
+
 .CardItem {
-    padding: 5px;
-    text-align: center;
-    max-width: 265px;
-  }
+  padding: 5px;
+  text-align: center;
+  max-width: 265px;
+}
 
-  .CardItem img {
-    box-shadow: 5px 5px 10px black;}
+.CardItem img {
+  box-shadow: 5px 5px 10px black;
+}
 
-  /*  .CardItem img:hover{opacity:.7;filter:alpha(opacity=80);-moz-opacity:.8;-khtml-opacity:.7}
-   
+/* Estilos para el encabezado */
+.Header {
+  background-color: rgba(22, 22, 22, 0.7803921569);
+  color: #fff;
+  padding: 10px;
+}
 
-  /* Estilos para el encabezado */
-  .Header {
-    background-color: rgba(22, 22, 22, 0.7803921569);
-    color: #fff;
-    padding: 10px;
-  }
+.ItemHeader {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
 
-  
-  .ItemHeader {
-    font-size: .9rem;
-    font-weight: 300;
-  }
-  
-  /* Estilos para la imagen */
-  .ItemImg {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Estilos para la sección de información */
-  .InfoInicial {
-    justify-content: center;
-  }
+/* Estilos para la imagen */
+.ItemImg {
+  max-width: 100%;
+  height: auto;
+}
 
-  .InfoGeneral {
-    justify-content: center;
-   
-  }
-  .Info {
-    margin: -25% 0;
-    font-size: .7rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    background: rgba(0,0,0,.6);
-    max-height: 50px;
-    padding: 10px 10px 10px 10px;
-  }
+/* Estilos para la sección de información */
+.InfoInicial {
+  justify-content: center;
+}
 
-  
-  /* Estilos para el pie de página */
-  .ItemFooter {
-    margin-top: -1%;
-    background-color: rgb(43, 43, 43);
-    color: #fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: 300;
-  }
+.InfoGeneral {
+  justify-content: center;
+}
+.Info {
+  margin: -25% 0;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.6);
+  max-height: 50px;
+  padding: 10px 10px 10px 10px;
+}
 
-  .ItemFooter:hover {
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-  }
+/* Estilos para el pie del cart */
+.ItemFooter {
+  margin-top: -1%;
+  background-color: rgb(43, 43, 43);
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
 
-  
-  /* Estilos para el botón */
-  .Option {
-    color: #fff;
-    padding: 10px 40px;
-    border: none;
-    cursor: pointer;
-  }
-  
+.ItemFooter:hover {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
 
-
+/* Estilos para el botón */
+.Option {
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+}

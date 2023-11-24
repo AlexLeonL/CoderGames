@@ -3,21 +3,21 @@ import { useCart } from "../../context/CartContext";
 import { useNotification } from "../../notification/NotificationContext";
 import { Link } from "react-router-dom";
 
-const ButtonBuy = () =>{
-  return(
-   <div className="cart-content-buy ">
-    <div className="cart-content-buy-s1">
-      <p>☰ Resumen de Compra</p>
+const ButtonBuy = () => {
+  return (
+    <div className="cart-content-buy ">
+      <div className="cart-content-buy-s1">
+        <p>☰ Resumen de Compra</p>
+      </div>
+      <button className="buttonz">
+        <Link to="/cart">✔ Finalizar Compra</Link>
+      </button>
+      <button className="buttonz">
+        <Link to="/">← Seguir Comprando</Link>
+      </button>
     </div>
-    <button className="buttonz">
- <Link to="/cart">✔ Finalizar Compra</Link>
-    </button>
-    <button className="buttonz">
-      <Link to="/">← Seguir Comprando</Link>
-    </button>
-   </div> 
-  )
-}
+  );
+};
 
 const InputCount = ({ onAdd, stock, initial = 1 }) => {
   const [count, setCount] = useState(initial);
@@ -37,11 +37,25 @@ const InputCount = ({ onAdd, stock, initial = 1 }) => {
 };
 
 const ItemDetail = ({
-  id,name,img,price,stock,description,player,released,background,edition,plataforma,img1,img2,img3,img4,}) => {
+  id,
+  name,
+  img,
+  price,
+  stock,
+  description,
+  player,
+  released,
+  background,
+  edition,
+  plataforma,
+  img1,
+  img2,
+  img3,
+  img4,
+}) => {
   const [inputType] = useState("button");
   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
- 
   const ItemCount = inputType === "button" ? ButtonCount : InputCount;
 
   const { addItem, isInCart } = useCart();
@@ -57,7 +71,11 @@ const ItemDetail = ({
     };
 
     addItem(productToAdd);
-    setNotification("error", `Se agrego ${quantity} producto del juego ${name}`,img);
+    setNotification(
+      "error",
+      `Se agrego ${quantity} producto del juego ${name}`,
+      img
+    );
   };
 
   return (
@@ -70,13 +88,9 @@ const ItemDetail = ({
         backgroundSize: "cover",
         backgroundPosition: "center center",
         boxShadow: "5px 5px 10px black",
-      }}>
-        
+      }}
+    >
       <article>
-        {/* <button onClick={() => setInputType(inputType === 'input' ? 'button' : 'input')}>
-                Cambiar contador
-            </button> */}
-
         <div className="row">
           <div className="imagen-game-col">
             <div className="nuevo">
@@ -108,7 +122,8 @@ const ItemDetail = ({
                     <button
                       type="button"
                       className="rating-ct-s3"
-                      onClick={() => setImagenSeleccionada(img1)}>
+                      onClick={() => setImagenSeleccionada(img1)}
+                    >
                       <img src={img1} alt={name} />
                     </button>
                   </div>
@@ -118,7 +133,8 @@ const ItemDetail = ({
                     <button
                       type="button"
                       className="rating-ct-s3"
-                      onClick={() => setImagenSeleccionada(img2)}>
+                      onClick={() => setImagenSeleccionada(img2)}
+                    >
                       <img src={img2} alt={name} />
                     </button>
                   </div>
@@ -128,7 +144,8 @@ const ItemDetail = ({
                     <button
                       type="button"
                       className="rating-ct-s3"
-                      onClick={() => setImagenSeleccionada(img3)}>
+                      onClick={() => setImagenSeleccionada(img3)}
+                    >
                       <img src={img3} alt={name} />
                     </button>
                   </div>
@@ -138,21 +155,20 @@ const ItemDetail = ({
                     <button
                       type="button"
                       className="rating-ct-s3"
-                      onClick={() => setImagenSeleccionada(img4)}>
+                      onClick={() => setImagenSeleccionada(img4)}
+                    >
                       <img src={img4} alt={name} />
                     </button>
                   </div>
                 </div>
               </div>
 
-             
               {isInCart(id) ? (
-                <ButtonBuy/>
-
+                <ButtonBuy />
               ) : (
                 <ItemCount stock={stock} onAdd={handleOnAdd} />
               )}
-              
+
               {imagenSeleccionada && (
                 <div className="modal-imagen">
                   <img
@@ -168,15 +184,9 @@ const ItemDetail = ({
             </div>
           </div>
         </div>
-        <footer>
-
-        </footer>
-
+        <footer></footer>
       </article>
-    
     </div>
-
-    
   );
 };
 
@@ -244,13 +254,8 @@ const ButtonCount = ({ onAdd, stock, initial = 1 }) => {
           Agregar al carrito
         </button>
       </div>
-      
     </div>
-
   );
 };
 
-
-  
- 
 export default ItemDetail;

@@ -1,50 +1,48 @@
-/* Cart.css */
-
 .Cart {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    background-color: #f8f8f8;
-  }
-  
-  .Cart h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  .Cart .Option {
-    text-decoration: none;
-    color: #0077cc;
-    margin: 10px;
-  }
-  
-  .Cart .Total {
-    font-size: 1.2rem;
-  }
-  
-  .Cart .Button {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .Cart .Button:hover {
-    background-color: #ff5555;
-  }
-  
-  .Cart .Option.Checkout {
-    background-color: #0077cc;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .Cart .Option.Checkout:hover {
-    background-color: #0055aa;
-  }
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f8f8f8;
+}
+
+.Cart h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 10px;
+}
+
+.Cart .Option {
+  text-decoration: none;
+  color: #0077cc;
+  margin: 10px;
+}
+
+.Cart .Total {
+  font-size: 1.2rem;
+}
+
+.Cart .Button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Cart .Button:hover {
+  background-color: #ff5555;
+}
+
+.Cart .Option.Checkout {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Cart .Option.Checkout:hover {
+  background-color: #0055aa;
+}

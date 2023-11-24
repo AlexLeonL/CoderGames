@@ -20,44 +20,46 @@ const RelatedProduct = ({ currentProductId }) => {
   }, [currentProductId]);
 
   if (relatedProducts.length === 0) {
-    return null; 
+    return null;
   }
 
   return (
     <div className="rp-container">
-        <div className="rp-container-s0">
-        <div className="rp-title"><p>Productos relacionados</p></div>
-        <div className="rp-container-s1">
-        {relatedProducts.map((relatedProduct) => (
-        <div key={relatedProduct.id} className="related-product">
-            <article className="CardItem2">
-            <header className="Header">
-                <h2 className="ItemHeader"> 
-                    {relatedProduct.name}
-                </h2>
-            </header>
-            <picture>
-                <img src={relatedProduct.img} alt={relatedProduct.name} className="ItemImg"/>
-            </picture>
-   
-                <section className="InfoGeneral">
-                <p className="Info">
-                    Precio: ${relatedProduct.price}
-                </p>
-                <p className="Info">
-                    Categoria: {relatedProduct.category}
-                    </p>
-            </section>
-           
-            
-
-            <footer className="ItemFooter">
-                <Link to={`/item/${relatedProduct.id}`} className='Option'>Ver Detalle</Link>
-            </footer>
-        </article>
+      <div className="rp-container-s0">
+        <div className="rp-title">
+          <p>Productos relacionados</p>
         </div>
-      ))}</div>
-    </div></div>
+        <div className="rp-container-s1">
+          {relatedProducts.map((relatedProduct) => (
+            <div key={relatedProduct.id} className="related-product">
+              <article className="CardItem2">
+                <header className="Header">
+                  <h2 className="ItemHeader">{relatedProduct.name}</h2>
+                </header>
+                <picture>
+                  <img
+                    src={relatedProduct.img}
+                    alt={relatedProduct.name}
+                    className="ItemImg"
+                  />
+                </picture>
+
+                <section className="InfoGeneral">
+                  <p className="Info">Precio: ${relatedProduct.price}</p>
+                  <p className="Info">Categoria: {relatedProduct.category}</p>
+                </section>
+
+                <footer className="ItemFooter">
+                  <Link to={`/item/${relatedProduct.id}`} className="Option">
+                    Ver Detalle
+                  </Link>
+                </footer>
+              </article>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

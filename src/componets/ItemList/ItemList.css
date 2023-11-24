@@ -1,50 +1,41 @@
 /* Estilos para el contenedor del listado de productos */
 .ListGroup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 25px;
-    justify-content: center;
-  }
-
-  :root {
-    --bg-color: #202020;
-    --text-color: #fff;
-    --main-color: #EF2FB1;
-    --dropdown: #171717;
-    --links: #d4d3d3;
-    --bg-1: #202020;
-  }
-  
-  body {
-    min-height: 100vh;
-    background: var(--bg-color);
-    color: var(--text-color);
-  }
-
-  #loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #ff0000;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-    z-index: 1001;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+  justify-content: center;
 }
-  
-  .loaded #loader-wrapper {
-    visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: all 0.3s 1s ease-out;
-    transition: all 0.3s 1s ease-out;
+
+body {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ff0000;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 1001;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
 }
 
 #loader-wrapper {
@@ -69,7 +60,6 @@
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
-
 
 #loader:after {
   content: "";

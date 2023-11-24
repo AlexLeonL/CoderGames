@@ -66,18 +66,28 @@ const Checkout = () => {
 
     if(loading) {
         return(
-            <div className="container-cart">
-        <p>Se esta generando su orden...</p></div>
+        <div><h1>Se esta generando su Orden...</h1>
+        <div id='loader-wrapper'>
+        <div id="loader"></div>
+        <div className='loader-section section-left'></div>
+        <div className='loader-section section-right'></div>
+         </div></div>       
         ) 
     }
 
     if(orderId) {
         return (
+            <>
             <div className="ff-container-form">
                 <div className="ff-s1">
                 <div className="ff-s0">
-        <div className="f-user"><img src="https://alexleon.pw/img/codergames%20(8).png" className="f-img"/><div className="ff-text"><p>El id de su orden es:</p>&nbsp;&nbsp;<p className="f-order">{orderId}</p></div></div>
-        </div></div></div>
+        <div className="f-user"><img src="https://alexleon.pw/img/mario.png" className="f-img"/><div className="ff-text"><p>El id de su orden es:</p>&nbsp;&nbsp;<p className="f-order">{orderId}</p></div></div>
+        </div></div>
+       <button className="btn-final">
+      <Link to="/">← Gracias por realizar tu compra, desesas realizar una compra nueva</Link>
+    </button>
+        </div>
+        </>
         )
     }
 

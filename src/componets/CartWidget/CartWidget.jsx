@@ -10,7 +10,7 @@ const CartWidget = () => {
         <div className='cart-shop-s0'>
             <div>
         <button onClick={() => navigate('/cart')} className='cart-shop-s1'>
-        <img src="https://alexleon.pw/img/shopping-cart.png" alt="" className='btn-d'/>
+        <img src="https://alexleon.pw/img/cartt.png" alt="cart" className='btn-d'/>
         </button></div>
          <div>  <p className='c-shop'>{totalQuantity}</p>
         </div></div>
