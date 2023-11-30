@@ -1,16 +1,42 @@
-![Logo CG](https://alexleon.pw/img/codergames-logo.png)
-# Proyecto ecommerce CoderGames
-
-## Flujo del Sitio
-Cuando se ingresa ala pagina principal de la pagina se observa la lista de productos que se esta ofrenciendo en el ecommerce de CoderGames. Donde se podra seleccionar cualquier producto y al cantidad que se necesite.
-
-Si se desea seguir comprando otros productos, puedes seleccionar el boyon de seguir comprando y te redireccionara a la pagina principal, en la cual seleccionaras otro producto y sus cantidades.
-
-Una vez que se tenga lo necesario para comprar se accede al carrito de compras donde muestra el total de productos seleccionada, la cantidad por producto y el precio total.
-
-Una vez que tengamos que finalizar la compra nos enviara a un formulario para registrar al cliente y posterior a eso se mostrara la orden de compra , el cual indicara que la compra fue exitosa.
+<p align="center"><img src="https://alexleon.pw/img/codergames-logo.png"/></p> 
 
 
-## Pagina Web del proyecto
+## <p align="center">🖥️ PROYECTO ECOMMERCE CODERGAMES 🖥️</p> 
 
-- [Pagina Vercel](https://coder-games.vercel.app/)
+<p align="center"><img src="https://alexleon.pw/img/log.png"/></p> 
+
+
+## Acerca del Proyecto 🚀
+
+_Este proyecto se enfoca en una aplicación web dedicada a la venta de juegos digitales, proporcionando a los usuarios la opción de adquirir productos en forma de software, específicamente para plataformas como PlayStation 5, PlayStation 4, PlayStation 3, Xbox, y Nintendo, entre otras._
+
+
+### Pre-requisitos 📋
+
+
+```
+Node.js v18.16.0
+Firebase 10.6.0
+```
+
+### Instalación 🔧
+
+```
+$ git clone https://github.com/AlexLeonL/CoderGames.git
+$ cd CoderGames
+$ npm install
+$ npm run dev
+```
+
+## Tecnologias Usadas 🛠️
+
+```
+HTML
+CSS
+React
+React Router
+Firebase
+```
+## Desarollado por ✒️
+
+* **Alex León**

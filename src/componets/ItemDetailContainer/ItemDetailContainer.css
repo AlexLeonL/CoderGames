@@ -264,7 +264,7 @@ body {
 }
 
 .cart-content {
-  background-color: rgba(24, 24, 24, 0.4);
+  background-color: rgb(99 98 98 / 35%);
   padding: 1%;
   width: 22%;
 }
@@ -284,7 +284,7 @@ body {
   font-size: 0.8rem;
   font-weight: 300;
   text-transform: uppercase;
-  background-color: rgba(56, 56, 56, 0.3);
+  background-color: rgb(0 0 0 / 48%);
   padding: 4% 25%;
   text-align: center;
 }
@@ -466,7 +466,7 @@ body {
 .cart-content-buy {
   display: flex;
   flex-direction: column;
-  background-color: rgba(24, 24, 24, 0.4);
+  background-color: rgb(83 81 81 / 40%);
   padding: 1%;
   width: 22%;
   justify-content: center;
@@ -479,7 +479,7 @@ body {
 .cart-content-buy-s1 p {
   font-size: 0.8rem;
   font-weight: 400;
-  background-color: rgba(51, 51, 51, 0.3);
+  background-color: rgb(0 0 0 / 43%);
   padding: 4% 0.2%;
   text-align: center;
 }
