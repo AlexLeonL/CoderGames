@@ -4,11 +4,23 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1%;
-    background-color: rgba(22, 22, 22, 0.7803921569);
+    background-color: rgba(19, 19, 19, 0.9);
+    margin-top: auto;
 }
 
 .f-container p {
     font-size: 0.8rem;
     font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 920px) {
+
+    .f-container p {
+        font-size: 0.7rem;
+        font-weight: 300;
+        text-align: center;
+    }
 }

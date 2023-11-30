@@ -47,7 +47,7 @@ const ItemDetailContainer = () => {
       <div className="container-fluid">
         <ItemDetail {...product} />
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid2">
         <RelatedProduct currentProductId={itemId} />
       </div>
     </div>

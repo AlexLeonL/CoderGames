@@ -1,26 +1,39 @@
-import classes from './Navbar.css';
-import CartWidget from "../CartWidget/CartWidget"
-import { NavLink, useNavigate } from 'react-router-dom'
+import { Component } from "react";
+import { MenuData } from "./MenuData";
+import CartWidget from "../CartWidget/CartWidget";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css"
 
-const Navbar = () => {
-    const navigate = useNavigate();
+class Navbar extends Component {
+    state = {clicked: false}
+    handleClick = () => {
+        this.setState({clicked:
+        !this.state.clicked})
+    }
+    render() {
+        return (
+            <nav className="NavbarItems">
+                <div className="logo">
+              <a href="/."><img src='https://alexleon.pw/img/logo.png' alt=''/> </a></div>
+                <div className="menu-icons" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
+                </div>
+                <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+                    {MenuData.map((item, index)=>{
+                        return (
+                            <li key={index}>
+                                <NavLink to={item.url} className={item.cName}>{item.title}</NavLink>
+                            </li>
+                        )
+                    })}  
+                     <CartWidget/>
+                </ul>
+               
+            </nav>
+        );
+            
+        
+    }
+}
 
-    return (    
-        <nav className='header'>
-            <img src='https://alexleon.pw/img/logo.png' onClick={() => navigate('/')} alt=''/> 
-             <section className='navbar'> 
-             <ul className='nav navbar-nav'>
-                <li><NavLink to='/category/juegosps5' className={({ isActive }) => isActive ? classes.active : ''}> Juegos PS5</NavLink></li>
-                <li><NavLink to='/category/juegosps4' className={({ isActive }) => isActive ? classes.active : ''}>Juegos PS4</NavLink></li>
-                <li><NavLink to='/category/juegosps3' className={({ isActive }) => isActive ? classes.active : ''}>Juegos PS3</NavLink></li>
-                <li><NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>Xbox</NavLink></li>
-                <li><NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>Nintento</NavLink></li>
-                <li><NavLink to='./' className={({ isActive }) => isActive ? classes.active : ''}>Contacto</NavLink></li>
-            </ul>
-            </section>
-            <CartWidget />
-        </nav>
-    );
-};
-
-export default Navbar;
+export default Navbar

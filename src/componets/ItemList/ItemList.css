@@ -11,6 +11,14 @@ body {
   min-height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #loader {

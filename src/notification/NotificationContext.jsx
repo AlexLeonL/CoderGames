@@ -1,30 +1,18 @@
 import { useState, createContext, useContext } from "react";
 
+import "./NotificationContext.css"; 
+
 const Notification = ({ notificationData }) => {
-  const notificationStyle = {
-    position: "fixed",
-    top: 100,
-    right: 95,
-    backgroundColor:
-      notificationData.type === "success" ? "green" : "rgba(243, 14, 14, 0.5)",
-    color: "white",
-    padding: "20px 30px 20px 30px",
-    borderRadius: 10,
-    zIndex: 9999,
-    display: "flex",
-    alignItems: "center",
-  };
+  const notificationClasses = `notification-container ${
+    notificationData.type === "success" ? "notification-success" : "notification-error"
+  }`;
 
   return (
-    <article style={notificationStyle}>
+    <article className={notificationClasses}>
       {notificationData.image && (
-        <img
-          src={notificationData.image}
-          alt="Product"
-          style={{ marginRight: "10px", width: "60px" }}
-        />
+        <img src={notificationData.image} alt="Product" className="notification-image"/>
       )}
-      <div>
+      <div className="notification-content">
         <p className="notifi-s1">¡Ya agregamos tu producto al carrito!</p>
         <p className="notifi-s2">{notificationData.text}</p>
       </div>

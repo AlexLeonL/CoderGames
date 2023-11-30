@@ -12,9 +12,9 @@
 
 .listado {
   width: 100%;
-  margin-top: 3.7%;
+  margin-top: 4.2%;
   display: grid;
-  padding-top: 2%;
+  margin-top: 12vh;
   padding-bottom: 1%;
 }
 

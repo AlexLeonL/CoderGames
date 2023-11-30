@@ -10,7 +10,7 @@
 :root {
   --bg-color: #202020;
   --text-color: #fff;
-  --main-color: #EF2FB1;
+  --main-color: #ffffff;
   --dropdown: #171717;
   --links: #d4d3d3;
   --bg-1: #202020;
@@ -54,3 +54,4 @@ section {
   font-weight: bold;
   color: var(--main-color);
 }
+

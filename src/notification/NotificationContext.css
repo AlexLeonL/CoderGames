@@ -1,0 +1,110 @@
+.notification-container {
+    position: fixed;
+    top: 100px;
+    right: 95px;
+    border-radius: 10px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-success {
+    background-color: green;
+  }
+  
+  .notification-error {
+    background-color: rgba(243, 14, 14, 0.5);
+  }
+  
+  .notification-content {
+    color: white;
+    padding: 20px 30px;
+  }
+  
+  .notification-image {
+    margin-left: 25px;
+    width: 60px;
+  }
+
+  
+@media screen and (min-width: 1311px) and (max-width: 1520px) {
+
+    .notification-container {
+        right: 75px;
+        top: 105px;
+    }
+
+    .notification-image {
+        margin-left: 15px;
+        width: 60px;
+      }
+}
+
+
+@media screen and (min-width: 937px)  and (max-width: 1310px) {
+
+    .notification-container {
+        right: 65px;
+        top: 105px;
+    }
+
+    .notification-image {
+        margin-left: 15px;
+        width: 60px;
+      }
+}
+
+@media screen and (max-width: 936px)   {
+
+    .notification-container {
+        right: 45px;
+        top: 115px;
+    }
+
+    .notification-image {
+        margin-left: 15px;
+        width: 60px;
+      }
+
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+
+    .notification-container {
+        right: 38px;
+        top: 112px;
+    }
+
+    .notification-image {
+        margin-left: 20px;
+        width: 60px;
+      }
+
+      .notification-content {
+        color: white;
+        padding: 20px 30px;
+      }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .notification-container {
+        right: 20px;
+        top: 115px;
+    }
+
+    .notification-image {
+        margin-left: 20px;
+        width: 50px;
+      }
+
+      .notification-content {
+        color: white;
+        padding: 20px 30px;
+      }
+
+}
