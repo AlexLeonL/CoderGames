@@ -10,10 +10,14 @@
   
   .notification-success {
     background-color: green;
+    backdrop-filter: blur(4px);
+
   }
   
   .notification-error {
     background-color: rgba(243, 14, 14, 0.5);
+    backdrop-filter: blur(4px);
+
   }
   
   .notification-content {
@@ -86,6 +90,13 @@
         padding: 20px 30px;
       }
 
+      .notification-error {
+      width: 90%;
+      }
+
+      .notification-success {
+      width: 90%;
+      }
 
 
 }
@@ -106,5 +117,13 @@
         color: white;
         padding: 20px 30px;
       }
+
+      .notification-error {
+        width: 90%;
+        }
+  
+        .notification-success {
+        width: 90%;
+        }
 
 }
