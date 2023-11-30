@@ -933,6 +933,9 @@ input {
     margin-top: 15vh;
     width: 65%;
   }
+  .ListGroup {
+    margin-top: 2vh;
+  }
 
 
 }
@@ -1082,6 +1085,10 @@ input {
 
   .ff-text p{
     font-size: .8rem;
+}
+
+.ListGroup {
+  margin-top: 2vh;
 }
 
 }
@@ -1262,6 +1269,10 @@ input {
     font-size: .8rem;
   }
 
+  .ListGroup {
+    margin-top: 2vh;
+  }
+
 }
 
   @media screen and (min-width: 501px) and (max-width: 800px) {
@@ -1275,7 +1286,7 @@ input {
     }
 
     .container-fluid {
-      margin-top: 4vh;
+      margin-top: 6vh;
       
     }
 
@@ -1352,6 +1363,10 @@ input {
       font-weight: 300;
     }
 
+    .ListGroup {
+      margin-top: 2vh;
+    }
+
 
   }
 
@@ -1365,8 +1380,12 @@ input {
       width: 100%;
     }
 
+    .ListGroup {
+      margin-top: 2vh;
+    }
+
     .container-fluid {
-      margin-top: 4vh;
+      margin-top: 6vh;
     }
 
     .cart-s0 {
